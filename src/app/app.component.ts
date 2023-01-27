@@ -13,12 +13,12 @@ export class AppComponent {
     { title: 'Home', url: '/home', icon: 'home' },
     { title: 'About', url: '/about', icon: 'people' },
     { title: 'Weather', url: '/weather', icon: 'cloud'},
-    { title: 'Profile', url: '/profile', icon: 'person'},
+    { title: 'Profile', url: '/page404', icon: 'person'},
     { title: 'Licores', url: '/licores', icon: 'flask'},
     { title: 'Conversor', url: '/conversor', icon: 'cash'},
     { title: 'winelist', url: 'winelist', icon: 'wine'},
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public labels = [];
 
 
   constructor(

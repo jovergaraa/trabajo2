@@ -5,6 +5,9 @@ import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signO
   providedIn: 'root'
 })
 export class AuthService {
+  stateUser(): void {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private auth:Auth) { }
 

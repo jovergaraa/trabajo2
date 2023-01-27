@@ -29,19 +29,20 @@ export class ConversorPage implements OnInit {
     }
 
     getEuroApesoChileno() {
-      this.conversor.buscarIndicador('euro', '4-01-2023').then(data => {
+      this.conversor.buscarIndicador('euro', '27-01-2023').then(data => {
         this.euro = data.serie[0].valor;
         console.log(this.euro);
       });
     }
   
     getDolarApesoChileno() {
-      this.conversor.buscarIndicador('dolar', '4-01-2023').then(data => {
+      this.conversor.buscarIndicador('dolar', '27-01-2023').then(data => {
         this.dolar = data.serie[0].valor;
         console.log(this.dolar);
       });
     }
   
+    
     calcular(){
       this.pesoAeuro = this.value * this.euro;
       console.log(this.pesoAeuro);

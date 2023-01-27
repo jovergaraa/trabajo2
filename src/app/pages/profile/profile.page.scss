@@ -1,0 +1,80 @@
+.avatar{
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+  }
+  
+  .no-avatar{
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+#Title
+{
+    font-weight: bold;
+}
+
+#Nombre
+{
+    font-size: 8.5vw;
+    width: 60%;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0;
+    margin-left: 5%;
+}
+
+#Usuario
+{
+    font-size: 4.5vw;
+    width: 55%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0.3em;
+    margin-left: 5%;
+}
+
+#Edad{
+    font-size: 6.5vw;
+    margin-top: 2.5em;
+    width: 90%;
+    margin-left: 5%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Numero{
+    font-size: 6.5vw;
+    margin-top: 1.5em;
+    width: 90%;
+    margin-left: 5%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Direccion{
+    font-size: 6.5vw;
+    margin-top: 1.5em;
+    width: 90%;
+    margin-left: 5%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Rut{
+    font-size: 6.5vw;
+    margin-top: 1.5em;
+    width: 90%;
+    margin-left: 5%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Texto-extra{
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    color: rgb(151, 151, 151);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    
+}

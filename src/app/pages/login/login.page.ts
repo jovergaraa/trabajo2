@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AlertController, LoadingController } from '@ionic/angular';
-import { users } from 'src/app/models/models';
+import {users} from 'src/app/models/models';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
@@ -28,19 +28,7 @@ export class LoginPage implements OnInit {
     private router: Router
   ) { }
 
-   datos: users ={
-     id: '',
-     name: '',
-     apellidos: '',
-     rut: '',
-     edad: 0,
-     direccion: '',
-     username: '',
-     correo: '',
-     contra: '',
-     fotoperfil: '',
-     perfil: ''
-   }
+
   ngOnInit() {
     this.createForm();
   }

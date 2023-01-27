@@ -1,9 +1,9 @@
-export interface users{
+export  interface users{
     id:string;
     name: string;
     apellidos: string;
     rut: string;
-    edad: number;
+    edad: string;
     direccion: string;
     username: string;
     correo: string;

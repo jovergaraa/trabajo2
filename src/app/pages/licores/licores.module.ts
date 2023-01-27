@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { LicoresPageRoutingModule } from './licores-routing.module';
 
 import { LicoresPage } from './licores.page';
+import { ComponentsModule } from "../../components/components.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    LicoresPageRoutingModule
-  ],
-  declarations: [LicoresPage]
+    declarations: [LicoresPage],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        LicoresPageRoutingModule,
+        ComponentsModule
+    ]
 })
 export class LicoresPageModule {}
