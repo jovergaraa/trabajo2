@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title> listado de vinos
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list *ngFor ="let wine of wines" [routerLink]="['/wineprofile/' + wine.id]">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src={{wine.image}} alt="">
+      </ion-avatar>
+      <ion-label>{{wine.wine}}</ion-label>
+    </ion-item>
+    <ion-icon name="chevron-forward-outline" (click)="goToWineProfile(wine)"></ion-icon>
+  </ion-list>
+</ion-content>

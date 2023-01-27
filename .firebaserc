@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "proyectotav-ac66f": {
+      "hosting": {
+        "app": [
+          "proyectotav-ac66f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "proyectotav-ac66f"
+  }
+}

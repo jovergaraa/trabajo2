@@ -1,0 +1,29 @@
+
+<ion-header> licores</ion-header>
+<ion-content>
+ <ion-card>
+  <ion-list>
+    <ion-item *ngFor="let licores of licores" (click)="openLicores(licores)">
+      <ion-avatar slot="start" *ngIf="licores.imageUrl; else LicoresSinImagen">
+        <img [src]="licores.imageUrl" alt="{{licores.nombre}}">
+      </ion-avatar>
+      <ng-template #LicoresSinImagen>
+        <ion-avatar slot="start" >
+          <ion-icon name="wine"></ion-icon>
+        </ion-avatar>
+      </ng-template>
+      <ion-label>
+        {{licores.nombre}}
+      </ion-label>
+    </ion-item>  
+  </ion-list>
+
+  <ion-fab horizontal="end" vertical="bottom">
+    <ion-fab-button (click)="addLicores()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+ </ion-card>
+ 
+</ion-content>

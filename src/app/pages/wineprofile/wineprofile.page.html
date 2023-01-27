@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>wineprofile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="winelist"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div *ngIf="wine">
+  <ion-card>
+    <ion-card-content>
+     <img src={{wine.image}} alt="">
+     <ion-card-title>
+      {{wine.wine}}
+     </ion-card-title>
+     <ion-label>
+      {{wine.location}}
+     </ion-label>
+     <ion-label>
+      {{wine.winery}}
+     </ion-label>
+    </ion-card-content>
+  </ion-card>
+</div>
+</ion-content>

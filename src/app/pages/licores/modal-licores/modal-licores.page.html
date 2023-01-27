@@ -1,0 +1,56 @@
+
+<ion-content>
+  <div *ngIf="licores">
+    <ion-item>
+      <ion-label position="stacked">Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="licores.nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Tipo</ion-label>
+      <ion-input type="text" [(ngModel)]="licores.tipo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">precio</ion-label>
+      <ion-input type="number" [(ngModel)]="licores.precio"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">grados de alcohol</ion-label>
+      <ion-input type="text" [(ngModel)]="licores.grados"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">origen</ion-label>
+      <ion-input type="text" [(ngModel)]="licores.origen"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">marca</ion-label>
+      <ion-input type="text" [(ngModel)]="licores.marca"></ion-input>
+    </ion-item>
+
+    <div class="avatar">
+      <ion-avatar (click)="changeImage(licores)">
+        <img *ngIf="licores.imageUrl; else licoresSinImagen" [src]="licores.imageUrl" alt="">
+        <ng-template #licoresSinImagen>
+          <div class="noAvatar">
+            <ion-icon name="paw-outline"></ion-icon>
+          </div>
+        </ng-template>
+        <div class="changePhoto">
+          <ion-icon name="camera"></ion-icon>
+        </div>
+      </ion-avatar>
+    </div>
+  </div>
+
+  <ion-button expand="block" color="primary" (click)="updateLicores()">
+    <ion-icon name="save" slot="start">Update</ion-icon>
+  </ion-button>
+  <ion-button expand="block" color="danger" (click)="deleteLicores()">
+    <ion-icon name="trash" slot="start">Delete</ion-icon>
+  </ion-button>
+
+</ion-content>

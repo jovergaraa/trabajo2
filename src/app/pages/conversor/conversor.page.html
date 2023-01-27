@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title> Conversor de divisas
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <p id="tipo_conversor">De dolar a peso chileno:</p>
+    <div class="input-group">
+      <input name="USD" id="USD1" type="number" required class="form-control" placeholder="USD" [(ngModel)]="value">
+      <span class="input-group-addon"></span>
+      <input name="CLP" id="CLP1" type="text" required class="form-control" placeholder="CLP" value="{{pesoAdolar}}" disabled>
+    </div>
+    <br>
+    <p id="tipo_conversor">De euro a peso chileno:</p>
+    <div class="input-group">
+      <input name="USD" id="remitosucursal" type="number" required class="form-control" placeholder="EUR" [(ngModel)]="value">
+      <span class="input-group-addon"></span>
+      <input name="CLP" id="remitonumero" type="text" required class="form-control" placeholder="CLP" value="{{pesoAeuro}}" disabled>
+    </div>
+    <br>
+    <button id="convertir" (click)="calcular()">Convertir</button>
+    <br>
+    <br>
+    <br>
+  </ion-card>
+  
+</ion-content>
